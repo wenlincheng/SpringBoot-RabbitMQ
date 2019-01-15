@@ -4,10 +4,10 @@ server:
 # RabbitMQ
 spring:
   rabbitmq:
-    host: 47.105.89.246
-    port: 5672
+    host:
+    port:
     username: cblog
-    password: cblog123456
+    password:
     publisher-confirms: true    #  消息发送到交换机确认机制,是否确认回调
 
 # 发送邮件
