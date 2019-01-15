@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+# RabbitMQ
+spring:
+  rabbitmq:
+    host: 47.105.89.246
+    port: 5672
+    username: cblog
+    password: cblog123456
+    publisher-confirms: true    #  消息发送到交换机确认机制,是否确认回调
+
+# 发送邮件
+mail:
+  smtp:
+    timeout: 5000
+    auth: true
+    port: 465
+  transport:
+    protocol: smtp
+  send:
+    charset: UTF-8
+  is:
+    ssl: true
+  host: smtp.163.com
+  auth:
+    name: wen_lincheng@163.com
+    password: 33lincheng
